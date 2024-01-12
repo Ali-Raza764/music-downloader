@@ -46,7 +46,7 @@ export default function Home() {
         </button>
       </form>
 
-      <div>{loading && "Loading..."}</div>
+      <div className="w-full min-h-screen flex items-center justify-center text-3xl font-bold">{loading && "Loading..."}</div>
       <div className="w-full flex items-center justify-center flex-wrap gap-4 pb-14">
         {!loading &&
           data?.map((song) => {
